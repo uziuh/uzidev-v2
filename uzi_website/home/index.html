@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta property="og:title" content="uzi | 17-Year-Old Developer from the US" />
+<meta property="og:description" content="Modern Web Developer, UI / UX Enthusiast. uhhh, i like cats too." />
+<meta property="og:image" content="https://i.imgur.com/x5wTPGF.png" />
+<meta property="og:url" content="https://uzi.xo.je/" />
+<meta property="og:type" content="website" />
+<meta name="theme-color" content="#7289da" />
+
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>uzi</title>
+  <link rel="stylesheet" href="/_static/css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <script src="/_js/animations.js"></script>
+  <script src="/_js/page-transitions.js"></script>
+
+  <style>
+    body {
+      background: #000000;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 2rem;
+    }
+    .navbar {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
+    }
+    .navbar nav a {
+      color: #aaa;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+      font-size: 1rem;
+    }
+    .navbar nav a.active,
+    .navbar nav a:hover {
+      color: #fff;
+    }
+
+    .name-label {
+      font-size: 1.7rem;
+      font-weight: 600;
+      color: #aaa;
+      margin-bottom: 0.5rem;
+      user-select: none;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+
+    }
+
+    .intro-card {
+      max-width: 600px;
+      margin: 0 auto 3rem auto;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+    }
+
+
+.tags {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  user-select: none;
+}
+
+.tag.purple {
+  background-color: rgba(120, 90, 255, 0.2);
+  color: #785aff;
+}
+
+.tag.blue {
+  background-color: rgba(90, 120, 255, 0.2);
+  color: #5a5aff;
+}
+
+.tag.pink {
+  background-color: rgba(255, 90, 180, 0.2);
+  color: #ff5aaa;
+}
+
+
+    .flex-boxes {
+      max-width: 600px;
+      margin: 0 auto 3rem auto;
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .box {
+      flex: 1 1 250px;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 0 8px rgba(90, 90, 255, 0.25);
+    }
+    .box h3 {
+      margin-top: 0;
+      font-weight: 700;
+      margin-bottom: 0.7rem;
+    }
+    .box p {
+      margin: 0;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="animated-lines-bg"></div>
+
+  <header class="navbar">
+    <nav>
+      <a href="/home" class="active">home</a>
+      <a href="/about">about</a>
+      <a href="/skills">skills</a>
+      <a href="/projects">projects</a>
+      <a href="/contact">contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="name-label">
+      uzi - home
+    </section>
+
+    <section class="intro-card">
+      <p class="greeting"><i class="fas fa-clock"></i> <span class="text">Hello</span></p>
+
+      <script>
+        const greetingText = document.querySelector('.greeting .text');
+        const now = new Date();
+        const hour = now.getHours();
+
+        let greeting;
+        if (hour < 12) {
+          greeting = 'Good morning';
+        } else if (hour < 18) {
+          greeting = 'Good afternoon';
+        } else {
+          greeting = 'Good evening';
+        }
+
+        greetingText.textContent = greeting;
+      </script>
+
+      <h1><i class="fas fa-code"></i> 17yo Developer from the US.</h1>
+      <div class="tags">
+        <span class="tag purple"><i class="fas fa-code"></i> Developer</span>
+        <span class="tag blue"><i class="fas fa-car"></i> Car Guy</span>
+        <span class="tag pink"><i class="fas fa-cat"></i> Cat Lover</span>
+      </div>
+    </section>
+
+    <section class="flex-boxes">
+      <div class="box">
+        <h3><i class="fas fa-bolt"></i> Current Focus</h3>
+        <p>Building personal projects and learning design systems.</p>
+      </div>
+      <div class="box">
+        <h3><i class="fas fa-book-open"></i> Learning</h3>
+        <p>Diving deeper into TypeScript, APIs and deployment.</p>
+      </div>
+    </section>
+
+<section class="discord-card" id="discord-card">
+  <img
+    src="https://lanyard.cnrad.dev/api/1270223423594954777?showDisplayName=true&theme=dark"
+    alt="Discord Status"
+    style="display: block; width: 100%; border-radius: 12px;"
+  />
+</section>
+
+  </main>
+</body>
+  <script src="/_js/parallax.js"></script>
+</html>

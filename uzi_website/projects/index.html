@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>uzi - projects</title>
+  <link rel="stylesheet" href="/_static/css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-SOMEHASH" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="/_js/animations.js"></script>
+  <script src="/_js/page-transitions.js"></script>
+  <script src="/_js/presence.js"></script>>
+
+  <style>
+    body {
+      background: #000000;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-weight: 700;
+    }
+
+
+    .tagline {
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    .project-card {
+      max-width: 450px;
+      margin: 0 auto 3rem auto;
+      padding: 2rem;
+      border-radius: 12px;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.03), rgba(207, 207, 207, 0.055));
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow:
+        inset 0 0 12px rgba(255, 255, 255, 0.03),
+        0 0 12px rgba(120, 120, 255, 0.05);
+      text-align: center;
+      position: relative;
+    }
+
+    .project-card h2 {
+      margin-bottom: 0.3rem;
+      font-size: 1.8rem;
+    }
+
+    .image-wrapper {
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .image-wrapper::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.35);
+      transition: background 0.3s ease;
+      z-index: 1;
+    }
+
+    .image-wrapper:hover::before {
+      background: rgba(0, 0, 0, 0.1);
+    }
+
+    .project-image {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+      border-radius: 10px;
+      position: relative;
+      z-index: 0;
+    }
+
+    .status,
+    .status2 {
+      display: inline-block;
+      margin-bottom: 1rem;
+      padding: 0.2rem 0.8rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      border-radius: 20px;
+      user-select: none;
+      color: white;
+    }
+
+    .status {
+      background: #ffffff5b;
+    }
+
+    .status2 {
+      background: #3d3d3d;
+    }
+
+.available {
+  display: inline-block;
+  margin-left: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0.2rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 20px;
+  background: #ffc50427;        
+  color: #ffc504;              
+  user-select: none;
+}
+
+.available2 {
+  display: inline-block;
+  margin-left: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0.2rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 20px;
+  background: #15ff0442;        
+  color: #15ff04;              
+  user-select: none;
+}
+
+.projects-container {
+  display: flex;
+  gap: 2rem;             
+  justify-content: center;
+  flex-wrap: wrap;       
+}
+
+.project-card {
+  flex: 1 1 400px;    
+  max-width: 450px;      
+  margin: 0;              
+}
+
+
+
+    .project-card p {
+      margin-bottom: 1.5rem;
+      font-size: 1rem;
+      color: #ccc;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      border-radius: 20px;
+      background: rgba(120, 120, 255, 0.3);
+      color: #ffffff;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      pointer-events: auto;
+      transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .btn:hover {
+      background: rgba(120, 120, 255, 0.5);
+      color: #d0d0ff;
+      box-shadow: 0 0 8px rgba(120, 120, 255, 0.7);
+    }
+
+    @keyframes pulseGlow {
+      0% {
+        box-shadow: 0 0 5px #28a745;
+        opacity: 1;
+      }
+      50% {
+        box-shadow: 0 0 15px #28a745;
+        opacity: 0.7;
+      }
+      100% {
+        box-shadow: 0 0 5px #28a745;
+        opacity: 1;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+
+<header class="navbar">
+<nav>
+  <a href="/home">home</a>
+  <a href="/about">about</a>
+  <a href="/skills">skills</a>
+  <a href="/projects" class="active">projects</a>
+  <a href="/contact">contact</a>
+</nav>
+</header>
+
+
+
+ <main>
+  <h1>My Projects</h1>
+
+  <div class="projects-container">
+    <section class="project-card">
+      <span class="badge available">In Development</span>
+      <div class="image-wrapper">
+        <img
+          src="https://cdn.discordapp.com/banners/1377483262229741568/10aa10ef8ef72895002ddb6fe571113a.webp?size=1024"
+          alt="flrp"
+          class="project-image"
+        />
+      </div>
+
+      <h2>Flawless RP</h2>
+      <div class="tech-stack">
+        <span class="status">Web Dev</span>
+      </div>
+      <p>
+        One of the most unique FiveM Servers. This project is still in development, join the discord below for constant updates.
+      </p>
+      <a href="https://discord.gg/flawlessrp" class="btn" target="_blank" rel="noopener noreferrer" aria-label="flrp discord">
+        Discord
+      </a>
+      <a href="#" class="btn disabled" aria-disabled="true" tabindex="-1" aria-label="Website coming soon">
+        Website (Soon)
+      </a>
+    </section>
+
+    <section class="project-card">
+      <span class="badge available2">Available</span>
+      <div class="image-wrapper">
+        <img
+          src="https://i.imgur.com/tt8KCll.png"
+          alt="ss.lol"
+          class="project-image"
+        />
+      </div>
+
+      <h2>screenshare.lol</h2>
+      <div class="tech-stack">
+        <span class="status">Manager</span>
+      </div>
+      <p>
+        Fivem Cheat detection system, all based on discord analysis
+      </p>
+      <a href="https://screenshare.lol" class="btn disabled" aria-disabled="true" tabindex="-1" aria-label="Website coming soon">
+        Website
+      </a>
+    </section>
+  </div>
+</main>
+
+</body>
+</html>

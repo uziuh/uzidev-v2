@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>uzi - about</title>
+  <link rel="stylesheet" href="/_static/css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <script src="/_js/animations.js"></script>
+  <script src="/_js/page-transitions.js"></script>
+  <script src="/_js/presence.js"></script>
+  <style>
+    main {
+      background: black;
+      padding: 3rem 2rem;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .flex-boxes .box {
+      padding: 2rem 1.5rem;
+    }
+
+    section.intro-card {
+      margin-bottom: 2.5rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    section.intro-card h2 {
+      margin-bottom: 1rem;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+      max-width: 600px;
+      margin: 0 auto;
+      padding-bottom: 1rem;
+    }
+
+
+    .name-label {
+      font-size: 1.7rem;
+      font-weight: 600;
+      color: #aaa;
+      margin-bottom: 0.5rem;
+      user-select: none;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+    }
+
+
+header.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.5rem 0 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: transparent;
+}
+
+header.navbar nav {
+  display: flex;
+  gap: 2rem;
+}
+
+header.navbar nav a {
+  color: #aaa;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  text-transform: capitalize;
+  transition: color 0.3s ease;
+}
+
+header.navbar nav a.active,
+header.navbar nav a:hover {
+  color: #fff;
+}
+body {
+  margin: 0;
+  background: #000;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+  </style>
+</head>
+<body>
+<header class="navbar">
+  <nav>
+    <a href="/home">home</a>
+    <a href="/about" class="active">about</a>
+    <a href="/skills">skills</a>
+    <a href="/projects">projects</a>
+    <a href="/contact">contact</a>
+  </nav>
+</header>
+
+<main>
+  <section class="name-label">
+    uzi - about
+  </section>
+
+  <section class="intro-card card-animate delay-1">
+    <h1><i class="fas fa-user-circle"></i> About Me</h1>
+    <p><em>I’m a huge fan of cats 🐱</em></p>
+    <p>
+      I’m a passionate young developer who loves crafting engaging digital experiences. My coding journey began at 12 years old, and since then, I’ve explored a variety of technologies and tools to sharpen my skills.
+    </p>
+    <p>
+      When I’m not writing code, you’ll find me gaming, jamming to music, or spending quality time with my feline friends.
+    </p>
+  </section>
+
+  <section class="flex-boxes card-animate delay-2" style="margin-bottom: 3rem;">
+    <div class="box">
+      <h3><i class="fas fa-clock"></i> 2+<br /><small>Years of Coding</small></h3>
+    </div>
+    <div class="box">
+      <h3><i class="fas fa-code"></i> 10+<br /><small>Projects Worked on</small></h3>
+    </div>
+    <div class="box">
+      <h3><i class="fas fa-users"></i> 500+<br /><small>Total Users Reached</small></h3>
+    </div>
+  </section>
+
+  <section class="intro-card card-animate delay-3">
+    <h2>Interests</h2>
+    <div class="tags">
+      <span class="tag tag1">Web Development</span>
+      <span class="tag tag2">UI/UX Design</span>
+      <span class="tag tag3">Backend Systems</span>
+      <span class="tag tag6">Cats</span>
+    </div>
+  </section>
+</main>
+</body>
+</html>

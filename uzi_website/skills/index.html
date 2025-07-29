@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>skills - uzi</title>
+  <link rel="stylesheet" href="/_static/css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="/_js/animations.js"></script>
+  <script src="/_js/page-transitions.js"></script>
+  <script src="/_js/presence.js"></script>
+  <style>
+    body {
+      background: #000000;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-weight: 700;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      margin-bottom: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #ccc;
+    }
+
+    .intro-card {
+      max-width: 900px;
+      margin: 0 auto 3rem auto;
+      padding: 2rem 2.5rem;
+      border-radius: 14px;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0));
+      border: 1.5px solid rgba(255, 255, 255, 0.25);
+      box-shadow:
+        inset 0 0 14px rgba(255, 255, 255, 0.05),
+        0 0 18px rgba(120, 120, 255, 0.08);
+      font-size: 1.05rem;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      max-width: 1000px;
+      margin: 0 auto 2rem auto;
+    }
+
+    .skills-card {
+      padding: 1.2rem;
+      border-radius: 10px;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0));
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: inset 0 0 12px rgba(255, 255, 255, 0.03), 0 0 12px rgba(120, 120, 255, 0.05);
+      font-size: 0.9rem;
+    }
+
+    .bottom-card {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 1.2rem;
+      border-radius: 10px;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0));
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: inset 0 0 12px rgba(255, 255, 255, 0.03), 0 0 12px rgba(120, 120, 255, 0.05);
+      font-size: 0.9rem;
+      margin-bottom: 3rem;
+    }
+
+    .skill {
+      margin-bottom: 1.2rem;
+    }
+
+    .progress-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.3rem;
+    }
+
+    .skill-name {
+      font-weight: 600;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .progress-bar {
+      background: #121212;
+      border-radius: 12px;
+      overflow: hidden;
+      height: 18px;
+      box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.03);
+    }
+
+    .progress {
+      height: 100%;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #9f56ff50, #ea04ff54);
+      box-shadow: 0 0 10px #000000;
+      width: 0%;
+      transition: width 1.2s ease-in-out;
+    }
+
+    @media (max-width: 768px) {
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+
+    .name-label {
+      font-size: 1.7rem;
+      font-weight: 600;
+      color: #aaa;
+      margin-bottom: 0.5rem;
+      user-select: none;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+    }
+
+
+    header.navbar {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
+    }
+    header.navbar nav a {
+      color: #aaa;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+      text-transform: capitalize;
+    }
+    header.navbar nav a.active,
+    header.navbar nav a:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <nav>
+      <a href="/home">home</a>
+      <a href="/about">about</a>
+      <a href="/skills" class="active">skills</a>
+      <a href="/projects">projects</a>
+      <a href="/contact">contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="name-label">
+      uzi - skills
+    </section>
+
+    <section class="intro-card">
+      <h2>My Skills</h2>
+      <p>I've developed a range of skills across different areas of web development. Here's a breakdown of my technical expertise:</p>
+    </section>
+
+    <div class="skills-grid">
+
+      <section class="skills-card">
+        <h2><i class="fas fa-laptop-code"></i> Frontend</h2>
+        <div class="skill">
+          <div class="progress-container">
+            <span class="skill-name"><i class="fab fa-js-square"></i> JavaScript</span>
+            <span>95%</span>
+          </div>
+          <div class="progress-bar"><div class="progress" data-progress="95"></div></div>
+        </div>
+        <div class="skill">
+          <div class="progress-container">
+            <span class="skill-name"><i class="fab fa-html5"></i> HTML & CSS</span>
+            <span>80%</span>
+          </div>
+          <div class="progress-bar"><div class="progress" data-progress="80"></div></div>
+        </div>
+        <div class="skill">
+          <div class="progress-container">
+            <span class="skill-name"><i class="fab fa-react"></i> React</span>
+            <span>50%</span>
+          </div>
+          <div class="progress-bar"><div class="progress" data-progress="50"></div></div>
+        </div>
+        <div class="skill">
+          <div class="progress-container">
+            <span class="skill-name"><i class="fab fa-react"></i> Next.js</span>
+            <span>50%</span>
+          </div>
+          <div class="progress-bar"><div class="progress" data-progress="50"></div></div>
+        </div>
+        <div class="skill">
+          <div class="progress-container">
+            <span class="skill-name"><i class="fas fa-wind"></i> Tailwind CSS</span>
+            <span>35%</span>
+          </div>
+          <div class="progress-bar"><div class="progress" data-progress="35"></div></div>
+        </div>
+      </section>
+
+      <section class="skills-card">
+        <h2><i class="fas fa-server"></i> Backend</h2>
+        <div class="skill">
+          <div class="progress-container">
+            <span class="skill-name"><i class="fab fa-python"></i> Python</span>
+            <span>75%</span>
+          </div>
+          <div class="progress-bar"><div class="progress" data-progress="75"></div></div>
+        </div>
+        <div class="skill">
+          <div class="progress-container">
+            <span class="skill-name"><i class="fas fa-database"></i> MongoDB</span>
+            <span>70%</span>
+          </div>
+          <div class="progress-bar"><div class="progress" data-progress="70"></div></div>
+        </div>
+        <div class="skill">
+          <div class="progress-container">
+            <span class="skill-name"><i class="fas fa-database"></i> SQL</span>
+            <span>65%</span>
+          </div>
+          <div class="progress-bar"><div class="progress" data-progress="65"></div></div>
+        </div>
+        <div class="skill">
+          <div class="progress-container">
+            <span class="skill-name"><i class="fas fa-code-branch"></i> Express</span>
+            <span>60%</span>
+          </div>
+          <div class="progress-bar"><div class="progress" data-progress="60"></div></div>
+        </div>
+        <div class="skill">
+          <div class="progress-container">
+            <span class="skill-name"><i class="fab fa-node-js"></i> Node.js</span>
+            <span>50%</span>
+          </div>
+          <div class="progress-bar"><div class="progress" data-progress="50"></div></div>
+        </div>
+      </section>
+    </div>
+
+    <section class="bottom-card">
+      <h2><i class="fas fa-tools"></i> Other Skills</h2>
+      <div class="skill">
+        <div class="progress-container">
+          <span class="skill-name"><i class="fas fa-pencil-ruler"></i> UI / UX </span>
+          <span>70%</span>
+        </div>
+        <div class="progress-bar"><div class="progress" data-progress="70"></div></div>
+      </div>
+      <div class="skill">
+        <div class="progress-container">
+          <span class="skill-name"><i class="fas fa-database"></i> API Integration</span>
+          <span>60%</span>
+        </div>
+        <div class="progress-bar"><div class="progress" data-progress="60"></div></div>
+      </div>
+      <div class="skill">
+        <div class="progress-container">
+          <span class="skill-name"><i class="fas fa-language"></i> Localization</span>
+          <span>40%</span>
+        </div>
+        <div class="progress-bar"><div class="progress" data-progress="40"></div></div>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.progress').forEach(bar => {
+        const progressValue = bar.getAttribute('data-progress');
+        bar.style.width = progressValue + '%';
+      });
+    });
+  </script>
+
+</body>
+</html>
